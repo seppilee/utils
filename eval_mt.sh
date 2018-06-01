@@ -17,7 +17,7 @@ SCRDIR=/DEV/nmt-training-scripts
 onmtDIR=/DEV/opennmt9
 
 
-cd onmtDIR
+cd $onmtDIR
 #perl ../corpus/tok.pl < ${file} > ${file}.tok
 th translate.lua -src ${file} -model ${model} -output ${out} -gpuid 1 -replace_unk        #gpu model
 #perl ../corpus/detok.pl < ${out}.tok > ${out}
